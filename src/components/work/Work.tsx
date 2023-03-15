@@ -11,7 +11,7 @@ interface WorkCardProps{
 
 function WorkCard(props : WorkCardProps){
     return <>
-        <Card sx={{ maxWidth: 345 }} >
+        <Card sx={{ maxWidth: 345 }} elevation={0}>
             <CardActionArea LinkComponent={MuiLink} rel="noopener noreferrer" target="_blank" href={props.source}>
                 <CardMedia
                 component="img"
@@ -19,7 +19,7 @@ function WorkCard(props : WorkCardProps){
                 image={props.preview}
                 alt="project preview"
                 />
-                <CardContent >
+                <CardContent sx={{height: 150}}>
                     <Typography gutterBottom variant="h5" component="div">
                         {props.title}
                     </Typography>

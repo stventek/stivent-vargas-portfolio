@@ -1,10 +1,8 @@
 import * as React from 'react'
-import useScrollTrigger from '@mui/material/useScrollTrigger'
-import Box from '@mui/material/Box'
-import Fade from '@mui/material/Fade'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
+import {useScrollTrigger, Fade, Box} from '@mui/material'
+import { EmotionJSX } from '@emotion/react/types/jsx-namespace'
 
-export default function ScrollTop(props: {children: React.ReactElement}) {
+export default function ScrollTop(props: {children: EmotionJSX.Element}) {
   const {children} = props
   const trigger = useScrollTrigger({
     disableHysteresis: true,

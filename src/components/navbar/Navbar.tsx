@@ -1,25 +1,14 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { Container } from '@mui/material';
-import MuiLink from '@mui/material/Link'
+import {Box, Toolbar, Typography, Button, Container, 
+  Link as MuiLink,AppBar, Divider, Drawer, 
+  IconButton, List, ListItem, ListItemButton, ListItemText} 
+  from '@mui/material'
+import {Menu as MenuIcon} from '@mui/icons-material'
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Stack', 'Work','Contact'];
 
-export default function NavBar(props: any) {
+function NavBar(props: any, ref: React.Ref<any>) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -46,7 +35,7 @@ export default function NavBar(props: any) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav">
+      <AppBar ref={ref} component="nav" elevation={0} enableColorOnDark color="transparent" sx={{backdropFilter:"blur(20px)"}}>
         <Container maxWidth="lg">
           <Toolbar>
             <IconButton
@@ -77,6 +66,8 @@ export default function NavBar(props: any) {
       </AppBar>
       <Box component="nav">
         <Drawer
+          elevation={0} 
+          PaperProps={{sx: {backgroundColor: '#112240'}}}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
@@ -95,3 +86,5 @@ export default function NavBar(props: any) {
     </Box>
   );
 }
+
+export default React.forwardRef(NavBar)

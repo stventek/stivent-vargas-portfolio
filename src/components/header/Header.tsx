@@ -8,7 +8,7 @@ export default function Header(props: any){
                 <Typography variant="h3" component="h1" align="center">
                     {headerData.title}
                 </Typography>
-                <Typography variant="subtitle1" align="center">
+                <Typography variant="subtitle1" sx={{color: (theme) => theme.palette.text.secondary}} align="center">
                     {headerData.subtitle}
                 </Typography>
             </Stack>

@@ -7,7 +7,7 @@ export default function Footer(props: any){
     return <>
         <Box component="footer" id="contact" sx={{scrollMarginTop: (theme) => theme.mixins.toolbar.minHeight}}>
             <Stack flexWrap="wrap" spacing={1} alignItems="center" justifyContent="center" direction={{ xs: 'column', sm: 'row' }}>
-                <Button LinkComponent={MuiLink} rel="noopener noreferrer" href="mailto:stiventvargas09@gmail.com" variant="contained">Get in touch </Button>
+                <Button LinkComponent={MuiLink} rel="noopener noreferrer" href="mailto:stiventvargas09@gmail.com" variant="outlined">Get in touch </Button>
                 <Divider flexItem  orientation="vertical"/>
                 <AiFillLinkedin size={20}/>
                 <MuiLink display="block" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/stivent-vargas-dev">LinkedIn</MuiLink>
