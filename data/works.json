@@ -1,7 +1,7 @@
 [
     {
         "title": "Sync-yt", 
-        "preview": "images/portfolio-preview.png",
+        "preview": "images/sync-yt-preview.png",
         "description": "Web app to watch youtube videos with others synchronously, includes: bulit-in chat, admin section, room based system, and more...",
         "source": "https://github.com/xenizs/sync-yt-frontend"
     },
