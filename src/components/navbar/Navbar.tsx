@@ -1,12 +1,32 @@
 import * as React from 'react';
 import {Box, Toolbar, Typography, Button, Container, 
   Link as MuiLink,AppBar, Divider, Drawer, 
-  IconButton, List, ListItem, ListItemButton, ListItemText} 
+  IconButton, List, ListItem, ListItemButton, ListItemText, styled} 
   from '@mui/material'
 import {Menu as MenuIcon} from '@mui/icons-material'
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Stack', 'Work','Contact'];
+
+const ItemButton = styled(Button)(({theme}) => ({
+  position: 'relative',
+  '&.MuiButtonBase-root:hover': {backgroundColor: 'transparent'},
+  '&::before': {
+    content: "''",
+    position: 'absolute',
+    left: 0,
+    bottom: 0,
+    width: '100%',
+    height: 2,
+    backgroundColor: theme.palette.primary.main,
+    transition: 'transform 0.5s ease',
+    transform: 'scaleX(0)',
+    transformOrigin: 'left',
+  },
+  '&:hover::before': {
+    transform: 'scaleX(1)',
+  },
+}))
 
 function NavBar(props: any, ref: React.Ref<any>) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -56,9 +76,9 @@ function NavBar(props: any, ref: React.Ref<any>) {
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: '#fff' }} LinkComponent={MuiLink} href={`#${item.toLowerCase()}`}>
+                <ItemButton  disableRipple disableTouchRipple key={item} LinkComponent={MuiLink} href={`#${item.toLowerCase()}`}>
                   {item}
-                </Button>
+                </ItemButton>
               ))}
             </Box>
           </Toolbar>

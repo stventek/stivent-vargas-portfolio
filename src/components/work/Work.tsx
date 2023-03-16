@@ -1,6 +1,8 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import MuiLink from '@mui/material/Link'
+import ExportedImage from "next-image-export-optimizer";
 import worksData from '../../../data/works.json'
+import imga from '../../../public/images/portfolio-preview.png'
 
 interface WorkCardProps{
     title: string,
@@ -13,12 +15,14 @@ function WorkCard(props : WorkCardProps){
     return <>
         <Card sx={{ maxWidth: 345 }} elevation={0}>
             <CardActionArea LinkComponent={MuiLink} rel="noopener noreferrer" target="_blank" href={props.source}>
-                <CardMedia
-                component="img"
-                height="140"
-                image={props.preview}
-                alt="project preview"
-                />
+                <CardMedia sx={{height: 194}}>
+                    <ExportedImage 
+                    alt={`${props.title} preview`}
+                    src={props.preview}
+                    width={345}
+                    style={{width: '100%', objectFit: 'cover'}}
+                    height={194}/>    
+                </CardMedia>
                 <CardContent sx={{height: 150}}>
                     <Typography gutterBottom variant="h5" component="div">
                         {props.title}
