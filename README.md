@@ -1,44 +1,37 @@
-# Material UI - Next.js example in TypeScript
+# stivent-vargas-portfolio
 
-## How to use
+Welcome to my personal portfolio project.
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+## This site was built using
 
-<!-- #default-branch-switch -->
+- Next.js 13 
+- MUI 5 
+- React Icons
+- TypeScript. 
 
-```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/material-next-ts
-cd material-next-ts
-```
+## Demo
 
-Install it and run:
+You can view a live demo of this portfolio at [https://xenizs.com](https://xenizs.com).
 
-```sh
-npm install
-npm run dev
-```
+## Features
 
-or:
+- Static site generation (SSG) for fast loading times and better SEO.
+- Optimized images at build time by using ```next-image-export-optimizer``` package.
+- Responsive design that looks great on all devices.
+- Material-UI components for consistent styling.
+- React Icons for easy-to-use icons.
 
-<!-- #default-branch-switch -->
+## Getting Started
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-next-ts)
+1. Clone this repository: `git clone https://github.com/xenizs/stivent-vargas-portfolio.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/material-next-ts)
+## Credits
 
-## The idea behind the example
+This portfolio design was inspired by [Brittany Chiang's v4 portfolio](https://github.com/bchiang7/v4).
 
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5. If you prefer, you can [use styled-components instead](https://mui.com/material-ui/guides/interoperability/#styled-components).
+## License
 
-## The link component
-
-The [example folder](https://github.com/mui/material-ui/tree/HEAD/examples/material-next-ts) provides an adapter for the use of [Next.js's Link component](https://nextjs.org/docs/api-reference/next/link) with MUI.
-More information [in the documentation](https://mui.com/material-ui/guides/routing/#next-js).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
