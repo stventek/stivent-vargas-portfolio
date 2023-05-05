@@ -10,5 +10,11 @@
         "preview": "images/portfolio-preview.png",
         "description": "Personal portfolio made with NextJS, MUI, and Typescript.",
         "source": "https://github.com/xenizs/stivent-vargas-portfolio"
+    },
+    {
+        "title": "Python no framework API", 
+        "preview": "images/python-api-no-framework.png",
+        "description": "Simple python Recipe REST API built with no framework",
+        "source": "https://github.com/xenizs/python-api-no-framework"
     }
 ]
