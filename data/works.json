@@ -1,5 +1,11 @@
 [
     {
+        "title": "MP-RTT-OCR", 
+        "preview": "images/mp-rtt-ocr-preview.png",
+        "description": "multiplatform (MP) real-time translation (RTT) app that utilizes Optical Character Recognition (OCR)",
+        "source": "https://github.com/xenizs/python-api-no-framework"
+    },
+    {
         "title": "Sync-yt", 
         "preview": "images/sync-yt-preview.png",
         "description": "Web app to watch youtube videos with others synchronously, includes: bulit-in chat, admin section, room based system, and more...",
