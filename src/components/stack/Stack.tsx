@@ -14,7 +14,7 @@ export default function Stack(){
                 I am familiar with but not limited to
             </Typography>
             <Container maxWidth="sm">
-                <Grid container spacing={3} textAlign="center">
+                <Grid container spacing={3} textAlign="center" justifyContent={"center"}>
                     <Grid xs={4} sm={2}>
                         <TbBrandNextjs size={60}/>
                     </Grid>
@@ -47,12 +47,6 @@ export default function Stack(){
                     </Grid>
                     <Grid xs={4} sm={2}>
                         <DiPostgresql size={60}/>
-                    </Grid>
-                    <Grid xs={4} sm={2}>
-                        <DiPhp size={60}/>
-                    </Grid>
-                    <Grid xs={4} sm={2}>
-                        <FaLaravel size={60}/>
                     </Grid>
                     <Grid xs={4} sm={2}>
                         <SiStrapi size={60}/>

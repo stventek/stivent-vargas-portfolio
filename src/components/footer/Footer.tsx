@@ -12,7 +12,7 @@ export default function Footer(props: any){
                 <AiFillLinkedin size={20}/>
                 <MuiLink display="block" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/stivent-vargas-dev">LinkedIn</MuiLink>
                 <AiFillGithub size={20}/>
-                <MuiLink display="block" rel="noopener noreferrer" target="_blank" href="https://github.com/xenizs">Github</MuiLink>
+                <MuiLink display="block" rel="noopener noreferrer" target="_blank" href="https://github.com/stventek">Github</MuiLink>
                 <SiGmail size={20}/>
                 <MuiLink display="block" rel="noopener noreferrer" href="mailto:stiventvargas09@gmail.com">Email</MuiLink>
             </Stack>
