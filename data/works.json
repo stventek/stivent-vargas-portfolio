@@ -1,5 +1,11 @@
 [
     {
+        "title": "F2P Zone", 
+        "preview": "images/free-to-play-zone-screenshot.png",
+        "description": "Search free to play games by title, platform, and genre.",
+        "source": "https://free-to-play-zone.vercel.app/"
+    },
+    {
         "title": "MP-RTT-OCR", 
         "preview": "images/mp-rtt-ocr-preview.png",
         "description": "multiplatform (MP) real-time translation (RTT) app that utilizes Optical Character Recognition (OCR)",
