@@ -1,5 +1,11 @@
 [
     {
+        "title": "NG File Explorer", 
+        "preview": "images/ng-fe.png",
+        "description": "Browse and manage files just like any other cloud storage service",
+        "source": "https://ng-file-explorer.vercel.app/"
+    },
+    {
         "title": "F2P Zone", 
         "preview": "images/free-to-play-zone-screenshot.png",
         "description": "Search free to play games by title, platform, and genre.",

@@ -1,6 +1,6 @@
 import MuiLink from '@mui/material/Link'
 import { Box, Button, Divider, Stack, Typography } from "@mui/material"
-import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+import {AiFillGithub, AiFillTwitterCircle, AiFillLinkedin} from 'react-icons/ai'
 import { SiGmail } from 'react-icons/si'
 
 export default function Footer(props: any){
@@ -11,6 +11,8 @@ export default function Footer(props: any){
                 <Divider flexItem  orientation="vertical"/>
                 <AiFillLinkedin size={20}/>
                 <MuiLink display="block" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/stivent-vargas-dev">LinkedIn</MuiLink>
+                <AiFillTwitterCircle size={20}/>
+                <MuiLink display="block" rel="noopener noreferrer" target="_blank" href="https://twitter.com/stventekk">Twitter</MuiLink>
                 <AiFillGithub size={20}/>
                 <MuiLink display="block" rel="noopener noreferrer" target="_blank" href="https://github.com/stventek">Github</MuiLink>
                 <SiGmail size={20}/>

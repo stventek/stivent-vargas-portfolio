@@ -1,6 +1,6 @@
 import { Typography, Container, Box } from "@mui/material"
 import {TbBrandNextjs} from 'react-icons/tb'
-import {SiDjango, SiExpress, SiJavascript, SiMui, SiNestjs, SiStrapi, SiTypescript} from 'react-icons/si'
+import {SiDjango, SiTailwindcss, SiExpress, SiJavascript, SiMui, SiNestjs, SiStrapi, SiTypescript} from 'react-icons/si'
 import {DiAngularSimple, DiLinux, DiNodejsSmall, DiPhp, DiPostgresql, DiPython} from 'react-icons/di'
 import {GrReactjs} from 'react-icons/gr'
 import {FaDocker, FaLaravel} from 'react-icons/fa'
@@ -59,6 +59,9 @@ export default function Stack(){
                     </Grid>
                     <Grid xs={4} sm={2}>
                         <SiMui size={60}/>
+                    </Grid>
+                    <Grid xs={4} sm={2}>
+                        <SiTailwindcss size={60}/>
                     </Grid>
                     <Grid xs={4} sm={2}>
                         <DiLinux size={60}/>
